@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark; */
+  background-color: var(--baby-powder);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* CSS HEX */
+  --baby-powder: #F5F5EFff;
+  --air-superiority-blue: #58A1C6ff;
+  --columbia-blue: #B9CFD7ff;
+  --platinum: #DDE4E2ff;
+  --baby-powder-2: #F5F5EFff;
+  --honolulu-blue: #1079B3ff;
+  --paynes-gray: #5F6B73ff;
+  --lapis-lazuli: #3B6787ff;
+
+  /* CSS HSL */
+  --baby-powder: hsla(60, 23%, 95%, 1);
+  --air-superiority-blue: hsla(200, 49%, 56%, 1);
+  --columbia-blue: hsla(196, 27%, 78%, 1);
+  --platinum: hsla(163, 11%, 88%, 1);
+  --baby-powder-2: hsla(60, 23%, 95%, 1);
+  --honolulu-blue: hsla(201, 84%, 38%, 1);
+  --paynes-gray: hsla(204, 10%, 41%, 1);
+  --lapis-lazuli: hsla(205, 39%, 38%, 1);
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--baby-powder);
+}
