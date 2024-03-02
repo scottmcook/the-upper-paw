@@ -14,16 +14,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
   /* CSS HEX */
-  --baby-powder: #F5F5EFff;
-  --air-superiority-blue: #58A1C6ff;
-  --columbia-blue: #B9CFD7ff;
-  --platinum: #DDE4E2ff;
-  --baby-powder-2: #F5F5EFff;
-  --honolulu-blue: #1079B3ff;
-  --paynes-gray: #5F6B73ff;
-  --lapis-lazuli: #3B6787ff;
+  --baby-powder: #f5f5efff;
+  --air-superiority-blue: #58a1c6ff;
+  --columbia-blue: #b9cfd7ff;
+  --platinum: #dde4e2ff;
+  --baby-powder-2: #f5f5efff;
+  --honolulu-blue: #1079b3ff;
+  --paynes-gray: #5f6b73ff;
+  --lapis-lazuli: #3b6787ff;
 
   /* CSS HSL */
   --baby-powder: hsla(60, 23%, 95%, 1);
@@ -36,6 +36,42 @@
   --lapis-lazuli: hsla(205, 39%, 38%, 1);
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "banner banner banner banner"
+    ". main sidebar . "
+    "footer footer footer footer";
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner {
+  grid-area: banner;
+}
+
+.main {
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.footer {
+  grid-area: footer;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -45,11 +81,11 @@ a:hover {
   color: #535bf2;
 }
 
-body {
+/* body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--baby-powder);
-}
+} */
